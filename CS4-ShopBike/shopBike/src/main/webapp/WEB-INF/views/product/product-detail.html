@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuaBike</title>
+    <!-- boxicons -->
+    <link rel="stylesheet" href="/template/boxicons-2.0.7/css/boxicons.min.css">
+    <!-- app css -->
+    <link rel="stylesheet" href="/template/grid.css">
+    <link rel="stylesheet" href="/template/app.css">
+    <link rel="stylesheet" href="/template/assets/base.css">
+    <link rel="stylesheet" href="/template/assets/main.css">
+    <link rel="stylesheet" href="/template/assets/grid.css">
+</head>
+
+<body>
+
+<!-- header -->
+<header>
+    <a href="#" class="logo">
+        <img src="/template/images/TuaBike.png" alt="">
+    </a>
+    <div class="main-menu-wrapper">
+        <ul class="main-menu">
+            <li><a href="#" class="active">shop</a></li>
+            <li><a href="#">urban</a></li>
+            <li><a href="#">mountain</a></li>
+            <li><a href="#">road</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <ul class="user-menu">
+        <li><a href="#"><i class='bx bx-shopping-bag'></i></a></li>
+        <li><a href="#"><i class='bx bx-user'></i></a></li>
+        <li><a href="#"><i class='bx bx-search'></i></a></li>
+    </ul>
+</header>
+<!-- end header -->
+
+<!-- hero slide -->
+<div class="hero">
+    <div class="slide-container" id="hero-slide">
+        <!-- slide item -->
+        <div class="slide">
+            <div class="slide-txt">
+                <div class="slide-title">
+                    <h3>polygon siskiu</h3>
+                </div>
+                <div class="slide-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru</p>
+                </div>
+                <div class="slide-btn">
+                    <a href="#" class="hero-btn">
+                        buy now
+                    </a>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src="/template/images/MTBROMO_N7_2022.png" alt="">
+            </div>
+        </div>
+        <!-- end slide item -->
+        <!-- slide item -->
+        <div class="slide">
+            <div class="slide-txt">
+                <div class="slide-title">
+                    <h3>mt bromo n7</h3>
+                </div>
+                <div class="slide-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru</p>
+                </div>
+                <div class="slide-btn">
+                    <a href="#" class="hero-btn">
+                        buy now
+                    </a>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src="/template/images/6489548.png" alt="">
+            </div>
+        </div>
+        <!-- end slide item -->
+        <!-- slide item -->
+        <div class="slide">
+            <div class="slide-txt">
+                <div class="slide-title">
+                    <h3>cascade mount</h3>
+                </div>
+                <div class="slide-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru</p>
+                </div>
+                <div class="slide-btn">
+                    <a href="#" class="hero-btn">
+                        buy now
+                    </a>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src="/template/images/b1.png" alt="">
+            </div>
+        </div>
+        <!-- end slide item -->
+        <div class="hero-txt">
+            you ride
+        </div>
+        <!-- slide control -->
+        <ul class="slide-control">
+            <li class="slide-prev"><i class="bx bx-chevron-left"></i></li>
+            <li class="slide-control-item active">01</li>
+            <li class="slide-control-item">02</li>
+            <li class="slide-control-item">03</li>
+            <li class="slide-next"><i class="bx bx-chevron-right"></i></li>
+        </ul>
+        <!-- end slide control -->
+    </div>
+</div>
+<!-- end hero slide -->
+
+<div class="app__container">
+    <div class="grid wide">
+        <!-- grid -> grid-row -> grid-column -->
+        <div class="row sm-gutter app__content">
+            <div class="col l-2 m-0 c-0">
+                <nav class="category">
+                    <h3 class="category__heading">
+                        <i class="category__heading-icon fas fa-list"></i>
+                        Danh mục
+                    </h3>
+                    <ul class="category-list">
+                        <li class="category-item">
+                            <a href="#" class="category-item__link category-item--active">Urban</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Mountain</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Road</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col l-10 m-12 c-12">
+                <div class="home-filter hide-on-mobile-tablet">
+                    <span class="home-filter__label">Sắp xếp theo</span>
+                    <button class="home-filter__btn btn">Phổ biến</button>
+                    <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                    <button class="home-filter__btn btn">Bán chạy</button>
+
+                    <div class="select-input">
+                        <div class="select-input__label">Giá</div>
+                        <i class="select-input__icon fas fa-angle-down"></i>
+
+                        <!-- list option -->
+                        <ul class="select-input__list">
+                            <li class="select-input__item">
+                                <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                            </li>
+                            <li class="select-input__item">
+                                <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-curren">1</span>/14
+                            </span>
+
+                        <div class="home-filter__page-control">
+                            <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                <i class="home-filter__page-icon fas fa-angle-left"></i>
+                            </a>
+                            <a href="" class="home-filter__page-btn">
+                                <i class="home-filter__page-icon fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="home-product">
+                    <div class="row sm-gutter">
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6" th:each="p :${product}">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name" th:text="${p.nameProduct}"></h4>
+                                <div class="home-product-item__price">
+<!--                                    <span class="home-product-item__old">1.200.000$</span>-->
+                                    <span class="home-product-item__current" th:text="${p.priceProduct}"></span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <!-- product item -->
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img" style="background-image:url(/template/images/b2.png);"></div>
+                                <h4 class="home-product-item__name">FX Sport Carbon 4</h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__old">1.200.000$</span>
+                                    <span class="home-product-item__current">999.000</span>
+                                </div>
+                                <button class="btn-product-detail">add to cart</button>
+                                <!-- <div class="home-product-item__action ">
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="home-product-item__sold">88 đã bán</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">Whoo</span>
+                                    <div class="home-product-item__origin-name">Nhật Bản</div>
+                                </div> -->
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percen">43%</span>
+                                    <div class="home-product-item__sale-off-label">GIẢM</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagination home-product__pagination">
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">
+                            <i class="pagination-item__icon fas fa-angle-left"></i>
+                        </a>
+                    </li>
+                    <li class="pagination-item pagination-item--active">
+                        <a href="" class="pagination-item__link">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">...</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">14</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">
+                            <i class="pagination-item__icon fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer section -->
+<footer>
+    <div class="section-content">
+        <div class="row">
+            <div class="col-4">
+                <a href="#" class="logo">
+                    <img src="/template/images/TuaBike.png" alt="">
+                </a>
+                <p class="footer-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, consequuntur obcaecati. Debitis sed velit, aliquid nihil, omnis illo dignissimos, quod vitae repellat quo nam quas similique cum molestias et fugiat.
+                </p>
+                <ul class="socials">
+                    <li><a href="#"><i class="bx bxl-facebook-circle"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="footer-menu">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="footer-menu">
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="#">gears</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3 class="footer-header">
+                    news letter
+                </h3>
+                <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam enim quaerat natus sit beatae. Corrupti error explicabo commodi beatae non. Aut ipsam nemo quibusdam quia molestias, non maiores reprehenderit.</p>
+                <div class="subscribe-form">
+                    <input type="text" name="" placeholder="Your Email...">
+                    <button class="btn">subscribe now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer section -->
+
+<!-- app js -->
+<script src="/template/app.js"></script>
+
+</body>
+
+</html>

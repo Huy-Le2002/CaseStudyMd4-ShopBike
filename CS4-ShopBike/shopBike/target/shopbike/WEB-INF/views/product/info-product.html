@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuaBike</title>
+    <!-- boxicons -->
+    <link rel="stylesheet" href="/template/boxicons-2.0.7/css/boxicons.min.css">
+    <!-- app css -->
+    <link rel="stylesheet" href="/template/grid.css">
+    <link rel="stylesheet" href="/template/app.css">
+    <link rel="stylesheet" href="/template/assets/base.css">
+    <link rel="stylesheet" href="/template/assets/main.css">
+    <link rel="stylesheet" href="/template/assets/grid.css">
+</head>
+
+<body>
+<!-- header -->
+<header>
+    <a href="#" class="logo">
+        <img src="./images/TuaBike.png" alt="">
+    </a>
+    <div class="main-menu-wrapper">
+        <ul class="main-menu">
+            <li><a href="#" class="active">shop</a></li>
+            <li><a href="#">urban</a></li>
+            <li><a href="#">mountain</a></li>
+            <li><a href="#">road</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <ul class="user-menu">
+        <li><a href="#"><i class='bx bx-shopping-bag'></i></a></li>
+        <li><a href="#"><i class='bx bx-user'></i></a></li>
+        <li><a href="#"><i class='bx bx-search'></i></a></li>
+    </ul>
+</header>
+<!-- end header -->
+
+<!-- hero slide -->
+<div class="hero">
+    <div class="slide-container" id="hero-slide">
+        <!-- slide item -->
+        <div class="slide">
+            <div class="slide-txt">
+                <div class="slide-title">
+                    <h3>polygon siskiu</h3>
+                </div>
+                <div class="slide-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru</p>
+                </div>
+                <div class="slide-btn">
+                    <a href="#" class="hero-btn">
+                        buy now
+                    </a>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src="/template/images/MTBROMO_N7_2022.png" alt="">
+            </div>
+        </div>
+        <!-- end slide item -->
+        <!-- slide item -->
+        <div class="slide">
+            <div class="slide-txt">
+                <div class="slide-title">
+                    <h3>mt bromo n7</h3>
+                </div>
+                <div class="slide-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru</p>
+                </div>
+                <div class="slide-btn">
+                    <a href="#" class="hero-btn">
+                        buy now
+                    </a>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src="/template/images/6489548.png" alt="">
+            </div>
+        </div>
+        <!-- end slide item -->
+        <!-- slide item -->
+        <div class="slide">
+            <div class="slide-txt">
+                <div class="slide-title">
+                    <h3>cascade mount</h3>
+                </div>
+                <div class="slide-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru</p>
+                </div>
+                <div class="slide-btn">
+                    <a href="#" class="hero-btn">
+                        buy now
+                    </a>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src="/template/images/b1.png" alt="">
+            </div>
+        </div>
+        <!-- end slide item -->
+        <div class="hero-txt">
+            you ride
+        </div>
+        <!-- slide control -->
+        <ul class="slide-control">
+            <li class="slide-prev"><i class="bx bx-chevron-left"></i></li>
+            <li class="slide-control-item active">01</li>
+            <li class="slide-control-item">02</li>
+            <li class="slide-control-item">03</li>
+            <li class="slide-next"><i class="bx bx-chevron-right"></i></li>
+        </ul>
+        <!-- end slide control -->
+    </div>
+</div>
+<!-- end hero slide -->
+<div class="container">
+    <div class="container-apartment">
+        <div class="container-product">
+            <div class="product-img">
+                <img src="/template/images/Polygon Cascade.png" alt="">
+            </div>
+            <div class="product-info">
+                <div class="product-info-name">
+                    <p>Xe đạp địa hình Polygon Cascade</p>
+                </div>
+                <div class="product-info-price">
+                    <p>15.000.000 VNĐ</p>
+                </div>
+                <div class="product-info-size">
+                    <label for="size">Chọn size:</label>
+                    <select class="size" name="size" id="size">
+                        <option value="L">S</option>
+                        <option value="M">M</option>
+                        <option value="S">L</option>
+                    </select>
+                </div>
+                <div class="cart">
+                    <div class="cart-txt">
+                        <p>Còn hàng</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <button class="btn-product-detail">add to cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-description">
+            <p class="product-description-icon">Mô tả <i class="fas fa-info-circle"></i></p>
+            <p class="product-description-text">Đối với các tín đồ của thể loại xe đạp địa hình, cái tên Giant Talon 29 4 – 2021 được mệnh danh là một trong số những sản phẩm lý tưởng để các tay đua địa hình thực chiến, đồng thời nó cũng là mẫu xe thích hợp để đạp thể dục trên nhiều dạng địa hình. Đây là một trong số những dòng sản phẩm có khả năng cân bằng tốt nhất về cả vận tốc lẫn sự kiểm soát an toàn tối ưu trên mọi cung đường dành cho chủ nhân sở hữu của mình.
+
+                Khung sườn thường được các tín đồ yêu thích thể loại xe đạp địa hình chú ý đặt lên trên hàng đầu. Xe đạp địa hình Giant Talon 29 4 chủ yếu được cấu thành nên từ chất liệu hợp kim nhôm ALUXX-grade aluminum nhẹ và bền. Không những thế, khung sườn xe được đi dây âm sườn tăng mức độ tinh gọn và đẹp của mẫu xe đạp này.
+
+                Vốn là một dòng sản phẩm nằm trong thể loại xe đạp địa hình. Thế nên, bộ truyền động cũng chính là một trong những vấn đề rất quan tâm của người dùng đối với Giant Talon 29 4. Những bộ groupset thường được chọn lựa chủ yếu từ nhà cung cấp Shimano nổi tiếng trên toàn thế giới. Trong đó, chuyển dĩa Shimano M315 2 tốc độ, chuyển líp Shimano Tourney 7 tốc độ.
+
+                Giant Talon 29 4 sử dụng phuộc SR Suntour XCE 29, hành trình phuộc 80mm và 100mm tuỳ thuộc vào size xe nó hoạt động tốt trên những con đường mòn đầy ghồ ghề dốc đá, giúp cho những tay biker lao về phía trước một cách dễ dàng mà vẫn đảm bảo được sự an toàn cao nhất cho họ.
+
+                Đặc biệt, khi được kết hợp với hệ thống thắng đĩa cơ có độ chính xác, an toàn, chúng lại càng trở nên hoàn hảo và thuyết phục được nhiều biker giúp các biker an toàn trong mọi điều kiện thời tiết.
+
+                Một trong những đặc điểm riêng rất dễ dàng nhận ra trên dòng sản phẩm xe đạp địa hình Giant Talon 29 4 chính là ở hệ thống bánh xe. Chúng được thiết kế theo kích cỡ 29×2.2 rất đặc trưng và thường thấy trên thể loại mountain bike. Lốp xe Ikon nhẹ và bền, không làm bạn giảm tốc độ nhiều trên mặt đường chuyên sử dụng cho các dòng xe đạp leo núi, giúp biker an toàn trên mọi chặng đường.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- footer section -->
+<footer>
+    <div class="section-content">
+        <div class="row">
+            <div class="col-4">
+                <a href="#" class="logo">
+                    <img src="./images/TuaBike.png" alt="">
+                </a>
+                <p class="footer-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, consequuntur obcaecati. Debitis sed velit, aliquid nihil, omnis illo dignissimos, quod vitae repellat quo nam quas similique cum molestias et fugiat.
+                </p>
+                <ul class="socials">
+                    <li><a href="#"><i class="bx bxl-facebook-circle"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="footer-menu">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="footer-menu">
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="#">gears</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3 class="footer-header">
+                    news letter
+                </h3>
+                <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam enim quaerat natus sit beatae. Corrupti error explicabo commodi beatae non. Aut ipsam nemo quibusdam quia molestias, non maiores reprehenderit.</p>
+                <div class="subscribe-form">
+                    <input type="text" name="" placeholder="Your Email...">
+                    <button class="btn">subscribe now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer section -->
+
+<!-- app js -->
+<script src="/template/app.js"></script>
+
+</body>
+
+</html>
